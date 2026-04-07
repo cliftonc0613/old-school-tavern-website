@@ -27,34 +27,26 @@ export function initNav() {
     lastScroll = currentScroll
   })
 
+  // Toggle hamburger/X icons
+  function toggleIcon(isOpen) {
+    hamburger.querySelector('.hamburger-icon').classList.toggle('hidden', isOpen)
+    hamburger.querySelector('.close-icon').classList.toggle('hidden', !isOpen)
+  }
+
   // Mobile menu toggle
   hamburger?.addEventListener('click', () => {
     mobileMenu.classList.toggle('open')
     const isOpen = mobileMenu.classList.contains('open')
     document.body.style.overflow = isOpen ? 'hidden' : ''
     nav.style.transform = 'translateY(0)'
-
-    // Animate hamburger to X
-    const lines = hamburger.querySelectorAll('span')
-    if (isOpen) {
-      lines[0].style.transform = 'rotate(45deg) translate(4px, 4px)'
-      lines[1].style.opacity = '0'
-      lines[2].style.transform = 'rotate(-45deg) translate(4px, -4px)'
-    } else {
-      lines[0].style.transform = ''
-      lines[1].style.opacity = '1'
-      lines[2].style.transform = ''
-    }
+    toggleIcon(isOpen)
   })
 
   mobileLinks?.forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('open')
       document.body.style.overflow = ''
-      const lines = hamburger.querySelectorAll('span')
-      lines[0].style.transform = ''
-      lines[1].style.opacity = '1'
-      lines[2].style.transform = ''
+      toggleIcon(false)
     })
   })
 }
