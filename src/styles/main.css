@@ -331,7 +331,7 @@ body {
 .mobile-menu {
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: 40;
   background: rgba(15, 14, 14, 0.98);
   backdrop-filter: blur(30px);
   display: flex;
