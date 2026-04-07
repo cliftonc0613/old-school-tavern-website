@@ -10,3 +10,7 @@
 | #5384 | 12:06 AM | 🔄 | Batch Standardization of Responsive Padding and Container Width | ~352 |
 | #5380 | 12:00 AM | 🔴 | Standardized Responsive Padding and Max-Width Across Website Pages | ~295 |
 </claude-mem-context>
+
+# Trigger Words
+
+- When the user types just the word "handoff" or asks to summarise the chat for a new session, run `/handoff` immediately.
