@@ -1,0 +1,377 @@
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/effect-creative";
+
+/* ============================================
+   CUSTOM FONTS
+   ============================================ */
+@font-face {
+  font-family: 'Lovelo Line';
+  src: url('https://fonts.cdnfonts.com/s/14352/Lovelo-LineLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   TAILWIND THEME
+   ============================================ */
+@theme {
+  --color-surface: #0f0e0e;
+  --color-surface-dim: #0f0e0e;
+  --color-surface-bright: #2e2b2b;
+  --color-surface-container: #1b1919;
+  --color-surface-container-low: #151313;
+  --color-surface-container-high: #211f1f;
+  --color-surface-container-highest: #282525;
+  --color-surface-container-lowest: #000000;
+  --color-surface-variant: #282525;
+
+  --color-primary: #ec268f;
+  --color-primary-dim: #d91e80;
+  --color-primary-container: #ec268f;
+  --color-primary-fixed: #ec268f;
+  --color-primary-fixed-dim: #c91a75;
+  --color-primary-hot: #ec268f;
+
+  --color-secondary: #f88cd6;
+  --color-secondary-dim: #e87fc8;
+  --color-secondary-container: #7b2166;
+  --color-secondary-fixed: #ffbfe6;
+
+  --color-tertiary: #9799ff;
+  --color-tertiary-dim: #9093ff;
+  --color-tertiary-container: #888bf7;
+  --color-tertiary-fixed: #a7a9ff;
+  --color-tertiary-fixed-dim: #9799ff;
+
+  --color-neon-cyan: #6be2f8;
+  --color-neon-purple: #9899ff;
+
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #afaaaa;
+  --color-on-background: #ffffff;
+  --color-on-primary: #600036;
+  --color-on-primary-fixed: #000000;
+
+  --color-outline: #787474;
+  --color-outline-variant: #4a4747;
+
+  --color-error: #ff6e84;
+  --color-error-dim: #d73357;
+  --color-error-container: #a70138;
+
+  --font-headline: 'Space Grotesk', sans-serif;
+  --font-display: 'Hammersmith One', sans-serif;
+  --font-body: 'Lato', sans-serif;
+  --font-accent: 'Lovelo Line', 'Space Grotesk', sans-serif;
+  --font-alt: 'Manrope', sans-serif;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+/* Note: Tailwind Preflight already resets margins/padding/box-sizing.
+   DO NOT add a global * reset here — it overrides all Tailwind utilities. */
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-on-primary-fixed);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   TYPOGRAPHY UTILITIES
+   ============================================ */
+.font-headline { font-family: var(--font-headline); }
+.font-display { font-family: var(--font-display); }
+.font-accent { font-family: var(--font-accent); }
+.font-alt { font-family: var(--font-alt); }
+
+.hero-outline-text {
+  font-family: var(--font-headline);
+  text-transform: uppercase;
+  -webkit-text-stroke: 1.5px #ffffff;
+  color: transparent;
+  letter-spacing: 0.08em;
+}
+
+.hero-outline-pink {
+  font-family: var(--font-headline);
+  text-transform: uppercase;
+  -webkit-text-stroke: 1.5px var(--color-primary);
+  color: transparent;
+  letter-spacing: 0.02em;
+}
+
+.lovelo-outline {
+  -webkit-text-stroke: 1px var(--color-primary-hot);
+  color: transparent;
+}
+
+/* ============================================
+   NEON GLOW EFFECTS
+   ============================================ */
+.neon-glow-pink {
+  text-shadow: 0 0 8px rgba(236, 38, 143, 0.6);
+}
+
+.neon-glow-cyan {
+  text-shadow: 0 0 10px rgba(107, 226, 248, 0.5);
+}
+
+.neon-box-pink {
+  box-shadow: 0 0 20px rgba(236, 38, 143, 0.25);
+}
+
+.neon-box-cyan {
+  box-shadow: 0 0 20px rgba(107, 226, 248, 0.2);
+}
+
+/* ============================================
+   GLASS MORPHISM
+   ============================================ */
+.glass-card {
+  background: rgba(46, 43, 43, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(175, 170, 170, 0.08);
+}
+
+/* ============================================
+   CUSTOM CURSOR
+   ============================================ */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor.hovering {
+  transform: scale(2.5);
+  background: rgba(236, 38, 143, 0.15);
+}
+
+/* ============================================
+   PAGE TRANSITION OVERLAY
+   ============================================ */
+.page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: var(--color-primary-hot);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  pointer-events: none;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-link.active {
+  color: var(--color-primary) !important;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* ============================================
+   HORIZONTAL SCROLL HIDE SCROLLBAR
+   ============================================ */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ============================================
+   BUTTON STYLES
+   ============================================ */
+.btn-primary {
+  background: var(--color-primary-hot);
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(236, 38, 143, 0.4);
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-outline-variant);
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: 0 0 20px rgba(236, 38, 143, 0.15);
+}
+
+/* Scroll animations removed for reliability - content always visible */
+
+/* ============================================
+   MENU ITEM HOVER LINE
+   ============================================ */
+.menu-item-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-outline-variant), transparent);
+  margin: 1rem 0;
+}
+
+/* ============================================
+   LOADING SCREEN
+   ============================================ */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.loader-text {
+  font-family: var(--font-headline);
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  color: white;
+}
+
+.loader-bar {
+  width: 200px;
+  height: 3px;
+  background: var(--color-surface-container-highest);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loader-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--color-primary-hot), var(--color-primary));
+  border-radius: 2px;
+}
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(15, 14, 14, 0.98);
+  backdrop-filter: blur(30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.mobile-menu.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-menu a {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: -0.02em;
+  transition: color 0.3s;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a.active {
+  color: var(--color-primary);
+}
+
+/* ============================================
+   SWIPER CUSTOMIZATIONS
+   ============================================ */
+.swiper-greatest-hits .swiper-slide {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.swiper-greatest-hits .swiper-slide-active,
+.swiper-greatest-hits .swiper-slide-next {
+  opacity: 1;
+}

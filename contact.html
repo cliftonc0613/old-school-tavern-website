@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Old School Tavern</title>
+  <meta name="description" content="Get in touch with Old School Tavern. Reservations, private events, press inquiries, and directions to 123 Midnight Ave." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lato:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="bg-surface text-on-surface">
+
+  <div class="page-transition"></div>
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 bg-transparent transition-all duration-500 ease-out">
+    <div class="flex justify-between items-center px-8 md:px-12 lg:px-16 py-5 max-w-[1920px] mx-auto">
+      <a href="/" class="font-headline font-black text-xl md:text-2xl tracking-[-0.04em] text-white uppercase">Old School Tavern</a>
+      <div class="hidden md:flex items-center gap-8 lg:gap-10">
+        <a href="/the-bar.html" class="nav-link font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">The Bar</a>
+        <a href="/the-kitchen.html" class="nav-link font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">The Kitchen</a>
+        <a href="/the-events.html" class="nav-link font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Events</a>
+        <a href="/contact.html" class="nav-link active font-headline font-bold text-sm uppercase tracking-widest text-primary transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hidden md:inline-flex btn-primary px-6 py-2.5 text-xs font-headline magnetic">BOOK TABLE</a>
+        <button id="hamburger" class="md:hidden flex flex-col gap-1.5 w-7">
+          <span class="block w-full h-0.5 bg-white transition-all duration-300"></span>
+          <span class="block w-full h-0.5 bg-white transition-all duration-300"></span>
+          <span class="block w-full h-0.5 bg-white transition-all duration-300"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/the-bar.html">The Bar</a>
+    <a href="/the-kitchen.html">The Kitchen</a>
+    <a href="/the-events.html">Events</a>
+    <a href="/contact.html" class="active">Contact</a>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative w-full flex flex-col items-center justify-center text-center px-4 overflow-hidden h-[50vh] md:h-[60vh] pt-20">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/60 to-surface z-10"></div>
+        <img alt="Old School Tavern interior" class="w-full h-full object-cover parallax-img scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH1Kqp5ia0EDECUj-MFbI7J8yUel7d1FKQqGw0MbxH79CslQEq-ijvQrCZr1JvexfBEeVtsT2ve7e9HJganJK7S0CQk5pkMngIfmQmpxw1BiVysKoqubUIF7Gc2akdbunBu1DiJSCotMFwaXF1ha2DJat0PZdrHJaHgMd8qc1DVb0VhUDGBbhnMsNp2246D8zfjnIZeWFPOCNm7ibHrSjceFeHzrzFZobPCuhHfbX_ckQGIhnlORz40qqfcUengpuoB9XrEgK73Zw" />
+      </div>
+      <div class="relative z-20 space-y-3">
+        <h1 class="font-headline text-6xl md:text-8xl font-black uppercase hero-outline-pink tracking-tight mb-4 char-animate">CONTACT</h1>
+        <p class="text-neon-cyan font-display text-lg md:text-2xl tracking-[0.2em] uppercase neon-glow-cyan">GET IN TOUCH</p>
+      </div>
+    </section>
+
+    <!-- Contact Info + Form -->
+    <section class="py-12 md:py-16 px-8 md:px-12 lg:px-16 bg-surface">
+      <div class="max-w-[1280px] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16">
+
+          <!-- Left: Contact Details -->
+          <div class="lg:col-span-5 space-y-10 md:space-y-12">
+            <div class="border-l-4 border-tertiary-fixed-dim pl-6">
+              <h2 class="text-3xl md:text-4xl font-display text-on-surface uppercase tracking-tight">FIND US</h2>
+              <p class="text-on-surface-variant font-bold text-sm tracking-widest mt-2 uppercase">IN THE NEON DISTRICT</p>
+            </div>
+
+            <!-- Address -->
+            <div class="flex gap-5 items-start group cursor-hover">
+              <div class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-black transition-all duration-300">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+              </div>
+              <div>
+                <h3 class="font-display text-lg text-on-surface uppercase mb-1">Address</h3>
+                <p class="text-on-surface-variant font-bold leading-relaxed">123 Midnight Ave<br/>Neon District, NY 10001</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex gap-5 items-start group cursor-hover">
+              <div class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-black transition-all duration-300">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+              </div>
+              <div>
+                <h3 class="font-display text-lg text-on-surface uppercase mb-1">Phone</h3>
+                <a href="tel:+12125551234" class="text-on-surface-variant font-bold hover:text-primary transition-colors">(212) 555-1234</a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex gap-5 items-start group cursor-hover">
+              <div class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-black transition-all duration-300">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+              </div>
+              <div>
+                <h3 class="font-display text-lg text-on-surface uppercase mb-1">Email</h3>
+                <a href="mailto:hello@oldschooltavern.com" class="text-on-surface-variant font-bold hover:text-primary transition-colors">hello@oldschooltavern.com</a>
+              </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="flex gap-5 items-start group cursor-hover">
+              <div class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-black transition-all duration-300">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
+              </div>
+              <div>
+                <h3 class="font-display text-lg text-on-surface uppercase mb-1">Hours</h3>
+                <div class="text-on-surface-variant font-bold space-y-1">
+                  <p>Mon &ndash; Thu: 4PM &ndash; 1AM</p>
+                  <p>Fri &ndash; Sat: 2PM &ndash; 3AM</p>
+                  <p>Sunday: 2PM &ndash; 12AM</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social -->
+            <div>
+              <h3 class="font-display text-lg text-on-surface uppercase mb-4">Follow the Vibe</h3>
+              <div class="flex space-x-3">
+                <a class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#">
+                  <span class="material-symbols-outlined">share_reviews</span>
+                </a>
+                <a class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#">
+                  <span class="material-symbols-outlined">camera</span>
+                </a>
+                <a class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#">
+                  <span class="material-symbols-outlined">music_note</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="lg:col-span-7">
+            <div class="glass-card rounded-xl p-8 md:p-12">
+              <h2 class="text-2xl md:text-3xl font-display text-on-surface uppercase tracking-tight mb-2">SEND A MESSAGE</h2>
+              <p class="text-on-surface-variant font-bold text-sm tracking-widest uppercase mb-8 md:mb-10">RESERVATIONS &bull; EVENTS &bull; PRESS</p>
+
+              <form class="space-y-6" onsubmit="event.preventDefault()">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-primary font-headline text-xs tracking-widest uppercase mb-3">First Name</label>
+                    <input class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:outline-none text-on-surface py-4 px-5 placeholder:text-outline font-bold" type="text" placeholder="JOHN" />
+                  </div>
+                  <div>
+                    <label class="block text-primary font-headline text-xs tracking-widest uppercase mb-3">Last Name</label>
+                    <input class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:outline-none text-on-surface py-4 px-5 placeholder:text-outline font-bold" type="text" placeholder="DOE" />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-primary font-headline text-xs tracking-widest uppercase mb-3">Email</label>
+                  <input class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:outline-none text-on-surface py-4 px-5 placeholder:text-outline font-bold" type="email" placeholder="JOHN@EMAIL.COM" />
+                </div>
+
+                <div>
+                  <label class="block text-primary font-headline text-xs tracking-widest uppercase mb-3">Subject</label>
+                  <select class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:outline-none text-on-surface py-4 px-5 font-bold">
+                    <option value="">SELECT A TOPIC</option>
+                    <option value="reservation">Reservation</option>
+                    <option value="private-event">Private Event</option>
+                    <option value="press">Press Inquiry</option>
+                    <option value="catering">Catering</option>
+                    <option value="careers">Careers</option>
+                    <option value="general">General Question</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-primary font-headline text-xs tracking-widest uppercase mb-3">Message</label>
+                  <textarea class="w-full bg-surface-container-high border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:outline-none text-on-surface py-4 px-5 placeholder:text-outline font-bold resize-none" rows="5" placeholder="TELL US WHAT'S ON YOUR MIND..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full btn-primary py-5 font-headline magnetic neon-box-pink text-base">SEND MESSAGE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map / CTA Section -->
+    <section class="h-[400px] md:h-[500px] relative flex items-center justify-center">
+      <div class="absolute inset-0">
+        <img alt="Tavern exterior at night" class="w-full h-full object-cover parallax-img scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4b92D3lnbtTxanRfPB63kwiV3oA4TRNY8msnrSLpJu7fWOplRQRQXMk4PtZ59XhEGFDEZVbRNojWyXMnUC2Q4eerkaIRx8vwN0FnPrDHgNaT3nKs7CzHfxjWy5R0LQL29wsgqz8MBDogZfKRsW3gOktm_C6y7NwDH-5wBlTo3gMBj0X9zwWBKZHJpvJ5iUNbPsXQ3a-ftpxcMG3nKCv55jq3QeBiEpTe2vtPV3gk7vjQByYyXA3LzkvnR1S3tyXyT4SWh_bBwQik" />
+        <div class="absolute inset-0 bg-surface/80"></div>
+      </div>
+      <div class="relative z-10 text-center space-y-6 md:space-y-8 max-w-2xl px-8 md:px-12">
+        <h3 class="text-3xl md:text-5xl font-display text-on-surface uppercase tracking-tighter">COME AS YOU ARE.</h3>
+        <p class="text-on-surface-variant font-bold leading-relaxed">No dress code. No pretension. Just great drinks, great food, and nights you'll actually remember. Well, most of them.</p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="inline-block btn-primary px-10 py-4 font-headline magnetic neon-box-pink">GET DIRECTIONS</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#100f0d] border-t border-white/5 pt-12 md:pt-16 pb-6 md:pb-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 px-8 md:px-12 lg:px-16 pb-12 md:pb-16 w-full">
+      <div>
+        <h3 class="text-xl font-black text-white font-headline mb-6 md:mb-8 uppercase">Old School Tavern</h3>
+        <p class="text-gray-400 font-bold mb-6 md:mb-8">123 Midnight Ave,<br/>Neon District, NY 10001</p>
+        <div class="flex space-x-3">
+          <a class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#"><span class="material-symbols-outlined text-lg md:text-xl">share_reviews</span></a>
+          <a class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#"><span class="material-symbols-outlined text-lg md:text-xl">camera</span></a>
+          <a class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#"><span class="material-symbols-outlined text-lg md:text-xl">music_note</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-primary font-bold mb-4 md:mb-6 uppercase tracking-widest text-sm">Navigation</h4>
+        <ul class="space-y-3 md:space-y-4">
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/the-bar.html">The Bar</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/the-kitchen.html">The Kitchen</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/the-events.html">The Events</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-primary font-bold mb-4 md:mb-6 uppercase tracking-widest text-sm">Legal</h4>
+        <ul class="space-y-3 md:space-y-4">
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Terms of Service</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Press Kit</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-primary font-bold mb-4 md:mb-6 uppercase tracking-widest text-sm">Opening Hours</h4>
+        <div class="text-gray-400 space-y-2">
+          <div class="flex justify-between"><span>Mon - Thu:</span><span>4PM - 1AM</span></div>
+          <div class="flex justify-between"><span>Fri - Sat:</span><span>2PM - 3AM</span></div>
+          <div class="flex justify-between"><span>Sunday:</span><span>2PM - 12AM</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="px-8 md:px-12 lg:px-16 pt-6 md:pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-bold uppercase tracking-widest">
+      <p>&copy; 2026 Old School Tavern. Midnight Pulse.</p>
+      <p class="mt-3 md:mt-0">ESTABLISHED IN THE SHADOWS</p>
+    </div>
+  </footer>
+
+</body>
+</html>

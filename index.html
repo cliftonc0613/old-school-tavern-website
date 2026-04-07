@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Old School Tavern | Keepin' It Old School</title>
+  <meta name="description" content="Old School Tavern - Craft cocktails, elevated tavern classics, live music & weekly events in the heart of the Neon District." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lato:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="bg-surface text-on-surface">
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-text">Old School Tavern</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition"></div>
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 bg-transparent transition-all duration-500 ease-out">
+    <div class="flex justify-between items-center px-8 md:px-12 lg:px-16 py-5 max-w-[1920px] mx-auto">
+      <!-- Logo -->
+      <a href="/" class="font-headline font-black text-xl md:text-2xl tracking-[-0.04em] text-white uppercase cursor-hover">
+        Old School Tavern
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8 lg:gap-10">
+        <a href="/the-bar.html" class="nav-link font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">The Bar</a>
+        <a href="/the-kitchen.html" class="nav-link font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">The Kitchen</a>
+        <a href="/the-events.html" class="nav-link font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Events</a>
+        <a href="/contact.html" class="nav-link font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Contact</a>
+      </div>
+
+      <!-- Right Side -->
+      <div class="flex items-center gap-4">
+        <a href="#" class="hidden md:inline-flex btn-primary px-6 py-2.5 text-xs font-headline magnetic">BOOK TABLE</a>
+        <!-- Hamburger -->
+        <button id="hamburger" class="md:hidden flex flex-col gap-1.5 w-7 cursor-hover">
+          <span class="block w-full h-0.5 bg-white transition-all duration-300"></span>
+          <span class="block w-full h-0.5 bg-white transition-all duration-300"></span>
+          <span class="block w-full h-0.5 bg-white transition-all duration-300"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="/" class="active">Home</a>
+    <a href="/the-bar.html">The Bar</a>
+    <a href="/the-kitchen.html">The Kitchen</a>
+    <a href="/the-events.html">Events</a>
+    <a href="/contact.html">Contact</a>
+    <a href="#" class="btn-primary px-8 py-3 text-lg mt-4">BOOK TABLE</a>
+  </div>
+
+  <main>
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover parallax-img scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4b92D3lnbtTxanRfPB63kwiV3oA4TRNY8msnrSLpJu7fWOplRQRQXMk4PtZ59XhEGFDEZVbRNojWyXMnUC2Q4eerkaIRx8vwN0FnPrDHgNaT3nKs7CzHfxjWy5R0LQL29wsgqz8MBDogZfKRsW3gOktm_C6y7NwDH-5wBlTo3gMBj0X9zwWBKZHJpvJ5iUNbPsXQ3a-ftpxcMG3nKCv55jq3QeBiEpTe2vtPV3gk7vjQByYyXA3LzkvnR1S3tyXyT4SWh_bBwQik" alt="Cinematic tavern interior with neon lights" />
+        <div class="absolute inset-0 bg-gradient-to-b from-surface/30 via-surface/50 to-surface"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 text-center px-4 flex flex-col items-center">
+        <img alt="Old School Tavern Logo" class="w-40 md:w-64 h-auto mb-4 drop-shadow-[0_0_20px_rgba(255,136,184,0.5)]" src="https://lh3.googleusercontent.com/aida/ADBb0uiPyUdXTA54-LP5C5fw2YYktswbRolfYlXpmEUx5gQYgoFIdBLGcAVKzhJ8IC2Hw6GF0lGw2iZ8v_DZ8GZzw1J8d3rQHnzscHH97gLwGX7UOrsQv4YdUXlxsj8YyZ_RuWrPxjm0-SE1EjdohzK_3FtJ1xgVYUaG7DfdsC13QuxhLyJ5Wa9afBXuOP6DV3bBZYPyeDICyPcKzH4tCqKWQIuXwKR6vKRkR8a0HsZf7qoMHcyqXhKyw7ZmA0V4-jLnT7wL4pkUQQ0G9Q" />
+        <h1 class="hero-outline-text text-5xl md:text-8xl lg:text-9xl font-black mb-8 char-animate">KEEPIN IT OLD SCHOOL</h1>
+        <a href="/the-bar.html" class="group relative px-10 py-4 overflow-hidden border-2 border-primary text-primary font-bold tracking-widest transition-all duration-500 hover:text-black magnetic">
+          <div class="absolute inset-0 w-0 bg-primary transition-all duration-500 group-hover:w-full"></div>
+          <span class="relative z-10 font-headline text-sm">EXPLORE THE VIBE</span>
+        </a>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <span class="material-symbols-outlined text-white/20 text-4xl">keyboard_double_arrow_down</span>
+      </div>
+    </section>
+
+    <!-- ============================================
+         LATEST FROM THE TAVERN
+         ============================================ -->
+    <section class="py-16 md:py-20 px-8 md:px-12 lg:px-16 max-w-[1280px] mx-auto">
+      <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-10 md:mb-12">
+        <div>
+          <p class="text-primary font-bold tracking-widest mb-2 uppercase text-sm">Fresh Off The Tap</p>
+          <h2 class="text-3xl md:text-5xl lg:text-6xl font-black font-display text-white uppercase">Latest from the Tavern</h2>
+        </div>
+        <div class="hidden md:flex space-x-4 mt-4 md:mt-0">
+          <button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-white/5 transition-colors magnetic">
+            <span class="material-symbols-outlined">arrow_back</span>
+          </button>
+          <button class="w-12 h-12 rounded-full border border-primary flex items-center justify-center bg-primary/10 text-primary hover:bg-primary/20 transition-colors magnetic">
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <!-- Card 1 -->
+        <div class="group relative overflow-hidden bg-surface-container-low cursor-hover">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNpQJUFxCbZy8jimjzpExWZBmn7bA1vQeJJZxkexfvLyWsLs1_k_RYK0YShrPq13UZz_uZeYrWHYX-0ZesgVbIucwvoSYihD3N_XuWrpD8QLB563QjmoGs5D7B6Tjt2r4dCMfLYwcpP8u-U9yqYL6BL2vC90EswK4FDSc04s27T3CqGaDLx2gW3sVK6KaW7Y80M6N5V2S4JH9uUZ9WpBBs-_3ZMC0-TxRnuxXUiO8j3ISP8F9mFnA0RcYn7nKB1UWWLBSVS9Jrips" alt="Live band performing at the tavern" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+            <h3 class="text-xl md:text-2xl font-bold font-display mb-2">Friday Night Bands</h3>
+            <p class="text-on-surface-variant font-bold text-sm mb-4">LIVE MUSIC STARTS AT 9PM</p>
+            <div class="h-1 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="group relative overflow-hidden bg-surface-container-low cursor-hover">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjMmkq8tUTwucCjY7sTvjgltGY3rzOTFSO3VwlIv4Dy9NKhQkx8AO-iuys2FsXQi8gnqgENjWXx3wHQ6_vssCWwSxcxInFV1FzGkTpxw31MmB8dZYQhMT0L9daeFSUGJMfKPhOof2cpFKg9CyFdpm45YcAJIc08UVx2eKYTXzMqu5sZUE8Ivm-TWVFw_8VhMb3IJ07ZAs6konqw1_8PvkQfMk0i8U5Qxa9bAp6bvJCX5SSrXNO6cllvupAPuMvxMJxhkWzQHb7qBQ" alt="Friends at trivia night" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+            <h3 class="text-xl md:text-2xl font-bold font-display mb-2">Trivia Tuesday</h3>
+            <p class="text-on-surface-variant font-bold text-sm mb-4">BRAINS, BEERS &amp; BRAGGING RIGHTS</p>
+            <div class="h-1 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="group relative overflow-hidden bg-surface-container-low cursor-hover">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARV0OzLFHyn_45oVKwUh5s_q8UR4zzDlifAGX6gQveoizRiGjqe0mCbXJRzr28NQBbt9jZEQ35Wwf2Be_qFKeu2dgYqJAcEAWsYIxu9l8XFw8mU4tJEbu7b5kjgZF7alcaSB32vGqZa6sX8q76RcYZrutecjdyuE_F5orIN7orSJVP0CirVj_3bvlNvFxSsglvTf6h42nnjgsp1ryPuwuAYFIuuXNEeGDu7-Rtme9JZ1UqH6FcsDMUFTp7Av-X0PfS4hhKqbW1v8U" alt="Cocktails lined up at the bar" />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+            <h3 class="text-xl md:text-2xl font-bold font-display mb-2">Happy Hour Daily</h3>
+            <p class="text-on-surface-variant font-bold text-sm mb-4">4PM - 7PM COCKTAILS &amp; CRAFTS</p>
+            <div class="h-1 w-0 bg-primary group-hover:w-full transition-all duration-500"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         ASYMMETRIC COLLECTIONS
+         ============================================ -->
+    <section class="py-12 md:py-16 px-8 md:px-12 lg:px-16 max-w-[1440px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-auto md:h-[700px] lg:h-[819px]">
+        <a href="/the-kitchen.html" class="relative group cursor-hover overflow-hidden h-[400px] md:h-full">
+          <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7qtfTcbircErcotMtF_45Rob37GzXjB7JcscrCLAXVx6Px9WnvqzIPxEXiF9dkGZv5fR194JKGBuiWVgajVGZ7yGSdeuXouwTsUFFeTPSgIolKmzWxREPvyiCHqwYDpUM79TA5R3j5-7cog_5IVZNjh2uqFkqv6ujf7ru_RNwyk-Q4PkDnDZxviF574BRb5cTFsg-GLUOc8Xp3uXYTKgQZWWk_U1WWXrBfaMWYchjSutmBv_IfFZwG-lTn0kCZx5XnQ5y9kpHSLc" alt="Gourmet burger" />
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <h2 class="text-5xl md:text-7xl lg:text-8xl font-black font-display text-white uppercase tracking-tighter transition-transform duration-500 group-hover:scale-110">The Kitchen</h2>
+          </div>
+        </a>
+        <a href="/the-bar.html" class="relative group cursor-hover overflow-hidden h-[400px] md:h-full">
+          <img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeeCLL4ffbtN2PKApMXMfvTpQqyfbYuDth2rNiHfiPToTThbRqALpH2Hxwo8JWv8mKK_V20-zbdk5rPMPOSZkXf4a14Hdom4u6Lrv4I9-RUieSiS5WYMz5cgvgA1kcbrP9c_U3vT9kgwJMJPdBLBAoa8FMHxFAo0DMr8haDm-tAJCnUbeVnDUNXLkWUr2KBuKpAPP29MgqYbxzN2xB0Qy58wNFzq2oNuoOKypLc6FLUYEiH8TaGp9Zrp2m_Y7WttA0Mecp0-jrqZM" alt="Craft beer being poured" />
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <h2 class="text-5xl md:text-7xl lg:text-8xl font-black font-display text-white uppercase tracking-tighter transition-transform duration-500 group-hover:scale-110">The Bar</h2>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================
+         GREATEST HITS - HORIZONTAL SCROLL
+         ============================================ -->
+    <section class="py-16 md:py-20 bg-surface-container-low overflow-hidden">
+      <div class="px-8 md:px-12 lg:px-16 mb-10 md:mb-12 max-w-[1280px] mx-auto">
+        <p class="text-primary font-bold tracking-widest mb-2 uppercase text-sm">Past Events</p>
+        <h2 class="text-3xl md:text-5xl lg:text-6xl font-black font-display text-white uppercase">Greatest Hits</h2>
+      </div>
+      <div class="flex overflow-x-auto gap-6 md:gap-8 px-8 md:px-12 lg:px-16 no-scrollbar pb-8">
+        <div class="flex-none w-[300px] md:w-[500px]">
+          <div class="bg-surface p-2">
+            <img class="w-full aspect-video object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnjH5OvQ3anDZQPGb9PJ2i5gSlmmtgrqJej_F24gpRIYtGGa2dm0e9ymFP0-v8uP1TBlyGaJDL_d4L3NButU92_5yxVujLTkL4AVsTFlJ66E5mapAuOdJh4ccGPpA0JDfPveTjlrPm77DMN3OI2yh1N6yr1O9lbguY9_TIIuIEbDdyrf59nbOLGfu1kf3aUxQecd-cCEP18hbHnVwfHpZ7vqVdBCBeVl-FiZNRDQzgePcBYl_oyDcxAJ3Q3tMZzcM7PaaNHTUupdE" alt="Midnight Riders Live" />
+            <div class="p-4 md:p-6">
+              <p class="text-primary text-xs font-bold mb-1">AUGUST 2023</p>
+              <h4 class="text-lg md:text-xl font-bold font-display">Midnight Riders Live</h4>
+            </div>
+          </div>
+        </div>
+        <div class="flex-none w-[300px] md:w-[500px]">
+          <div class="bg-surface p-2">
+            <img class="w-full aspect-video object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVfmJRk3I7TrAZNE8FlBkXqitSdiTZDA0LKq_nAEJqsWyIxh1915JrTP659eBsqelKp1I_ai2JmKtVGEmMC1zoKmQopzpKgqoHRQisew9M-OUCgRkZh_CnRq5xZvA61SkQu30POYbAmDp1SFKzhZHEH6Cx3M3lHoXsyiviJylqW1DRfZZUowePwMHymfcGkYBLpgF9n10w90ixG5L0OuDF8meRt2GaPoPRZoEbUFVibwyWxIyGM_l4RGl3SqpG2Hay8XutzNoCZR0" alt="Acoustic Soul Sessions" />
+            <div class="p-4 md:p-6">
+              <p class="text-primary text-xs font-bold mb-1">JULY 2023</p>
+              <h4 class="text-lg md:text-xl font-bold font-display">Acoustic Soul Sessions</h4>
+            </div>
+          </div>
+        </div>
+        <div class="flex-none w-[300px] md:w-[500px]">
+          <div class="bg-surface p-2">
+            <img class="w-full aspect-video object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7y_AC4AKjMULNgEJ4QHqs9vupEET8Az8GN0zMGzxOPjvq7pLtT0fQV54dnBCa9kY_yjm76-3agrunZ_rnMpxFecPVc1saylUY4c2JrtuQ6Vyd90I0UIZ7XtBfxQKRbDSnpK-pX8m_xERZjINd9nzH85ej_spgLI_JL2_SxuzMkapFZ4E5uUbC_2dxxUrX7oe91iryRjQO99zgfIvhzMJeuDYOpmgeJBS2NXWUcAmsEm5_b0bdtp3FAc7Ef2sPbB0X-3p5TUtvE7w" alt="Neon Disco Night" />
+            <div class="p-4 md:p-6">
+              <p class="text-primary text-xs font-bold mb-1">JUNE 2023</p>
+              <h4 class="text-lg md:text-xl font-bold font-display">Neon Disco Night</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         MERCH SECTION
+         ============================================ -->
+    <section class="py-16 md:py-20 px-8 md:px-12 lg:px-16 max-w-[1280px] mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
+        <div class="lg:col-span-7 relative">
+          <div class="absolute top-0 left-0 w-24 md:w-40 h-24 md:h-40 border-l-4 border-t-4 border-primary/30 z-10"></div>
+          <img class="w-full shadow-2xl" src="/images/ost-sweatshirt-color-logo.png" alt="Old School Tavern sweatshirt - color logo" />
+          <div class="absolute bottom-4 right-4 md:bottom-6 md:right-6 bg-primary-hot px-6 py-3 md:px-8 md:py-4 text-white font-black text-base md:text-xl font-headline uppercase z-10">
+            LIMITED DROP 01
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <h2 class="text-4xl md:text-6xl font-black font-display mb-6 leading-none uppercase">REPLICA 2026<br/><span class="text-primary">MERCH SHOP</span></h2>
+          <p class="text-on-surface-variant font-bold text-base md:text-lg mb-8 md:mb-10 leading-relaxed">
+            Wear the grit. Our first official limited run collection featuring heavy-weight cotton apparel inspired by the neon signs and dark corners of the Old School Tavern.
+          </p>
+          <div class="space-y-4">
+            <button class="w-full btn-primary py-5 font-headline magnetic neon-box-pink">SHOP THE DROP</button>
+            <button class="w-full btn-outline py-5 font-headline magnetic">VIEW LOOKBOOK</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         NEWSLETTER
+         ============================================ -->
+    <section id="contact" class="py-16 md:py-20 bg-surface-container-highest flex flex-col items-center justify-center text-center px-6">
+      <span class="material-symbols-outlined text-primary text-5xl md:text-6xl mb-6" style="font-variation-settings: 'FILL' 1;">mail</span>
+      <h2 class="text-3xl md:text-5xl font-black font-display mb-4 uppercase">GET THE MIDNIGHT PULSE</h2>
+      <p class="text-on-surface-variant font-bold max-w-xl mb-8 md:mb-12">Exclusive access to secret shows, member-only happy hours, and new merch drops delivered to your inbox.</p>
+      <form class="w-full max-w-lg flex flex-col md:flex-row gap-4" onsubmit="event.preventDefault()">
+        <input class="flex-grow bg-surface-container border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 focus:outline-none text-white font-bold py-4 px-6" placeholder="YOUR EMAIL ADDRESS" type="email" />
+        <button type="submit" class="btn-primary px-10 py-4 font-headline magnetic neon-box-pink">SUBSCRIBE</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="bg-[#100f0d] border-t border-white/5 pt-12 md:pt-16 pb-6 md:pb-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 px-8 md:px-12 lg:px-16 pb-12 md:pb-16 w-full">
+      <div>
+        <h3 class="text-xl font-black text-white font-headline mb-6 md:mb-8 uppercase">Old School Tavern</h3>
+        <p class="text-gray-400 font-bold mb-6 md:mb-8">123 Midnight Ave,<br/>Neon District, NY 10001</p>
+        <div class="flex space-x-3">
+          <a class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#">
+            <span class="material-symbols-outlined text-lg md:text-xl">share_reviews</span>
+          </a>
+          <a class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#">
+            <span class="material-symbols-outlined text-lg md:text-xl">camera</span>
+          </a>
+          <a class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#">
+            <span class="material-symbols-outlined text-lg md:text-xl">music_note</span>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-primary font-bold mb-4 md:mb-6 uppercase tracking-widest text-sm">Navigation</h4>
+        <ul class="space-y-3 md:space-y-4">
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/the-bar.html">The Bar</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/the-kitchen.html">The Kitchen</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/the-events.html">The Events</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-primary font-bold mb-4 md:mb-6 uppercase tracking-widest text-sm">Legal</h4>
+        <ul class="space-y-3 md:space-y-4">
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Terms of Service</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Press Kit</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-primary font-bold mb-4 md:mb-6 uppercase tracking-widest text-sm">Opening Hours</h4>
+        <div class="text-gray-400 space-y-2">
+          <div class="flex justify-between"><span>Mon - Thu:</span><span>4PM - 1AM</span></div>
+          <div class="flex justify-between"><span>Fri - Sat:</span><span>2PM - 3AM</span></div>
+          <div class="flex justify-between"><span>Sunday:</span><span>2PM - 12AM</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="px-8 md:px-12 lg:px-16 pt-6 md:pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-bold uppercase tracking-widest">
+      <p>&copy; 2026 Old School Tavern. Midnight Pulse.</p>
+      <p class="mt-3 md:mt-0">ESTABLISHED IN THE SHADOWS</p>
+    </div>
+  </footer>
+
+</body>
+</html>

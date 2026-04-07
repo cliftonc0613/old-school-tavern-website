@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Bar | Old School Tavern</title>
+  <meta name="description" content="Craft cocktails, cold taps, and curated bottles at Old School Tavern's bar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lato:wght@400;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="bg-surface text-on-surface">
+
+  <div class="page-transition"></div>
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 bg-transparent transition-all duration-500 ease-out">
+    <div class="flex justify-between items-center px-8 md:px-12 lg:px-16 py-5 max-w-[1920px] mx-auto">
+      <a href="/" class="font-headline font-black text-xl md:text-2xl tracking-[-0.04em] text-white uppercase">Old School Tavern</a>
+      <div class="hidden md:flex items-center gap-8 lg:gap-10">
+        <a href="/the-bar.html" class="nav-link active font-headline font-bold text-sm uppercase tracking-widest text-primary transition-colors">The Bar</a>
+        <a href="/the-kitchen.html" class="nav-link font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">The Kitchen</a>
+        <a href="/the-events.html" class="nav-link font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Events</a>
+        <a href="/contact.html" class="nav-link font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Contact</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hidden md:inline-flex btn-primary px-6 py-2.5 text-xs font-headline magnetic">BOOK TABLE</a>
+        <button id="hamburger" class="md:hidden flex flex-col gap-1.5 w-7">
+          <span class="block w-full h-0.5 bg-white transition-all duration-300"></span>
+          <span class="block w-full h-0.5 bg-white transition-all duration-300"></span>
+          <span class="block w-full h-0.5 bg-white transition-all duration-300"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/the-bar.html" class="active">The Bar</a>
+    <a href="/the-kitchen.html">The Kitchen</a>
+    <a href="/the-events.html">Events</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="relative w-full flex flex-col items-center justify-center text-center px-4 overflow-hidden h-[50vh] md:h-[60vh] pt-20">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/60 to-surface z-10"></div>
+        <img alt="Neon Tavern Bar" class="w-full h-full object-cover parallax-img scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc7lesc5ZLQzgQu3Aqx7HFFLMAiEgAB0PbJu9VsCk9Q8UmybeEwvor4gTs8k2urHtutBaBjBwfMZJMelJ9M974YhdWqRBN0XKaXJszqpy8wRfv-VgOb2LBW_bqhix0u7-xxPVisMH-ZCVPqQAZ8XwX9cKlTx2iGxjrhznXEHnGXTDoh0jFdUn5J3rf_A3uFcta4XfoNlBPXmZRevYV4ZJiIZg9yXbayAOk3UWrRVo4QkguSRRK31QjCnZNPfWfhTz-N-0qqsPFk8Y" />
+      </div>
+      <div class="relative z-20 space-y-3">
+        <h1 class="font-headline text-6xl md:text-8xl font-black uppercase hero-outline-pink tracking-tight mb-4 char-animate">THE BAR</h1>
+        <p class="text-neon-cyan font-display text-lg md:text-2xl tracking-[0.2em] uppercase neon-glow-cyan">CRAFT COCKTAILS &amp; COLD TAPS</p>
+      </div>
+    </section>
+
+    <!-- Signature Cocktails -->
+    <section class="py-12 md:py-16 px-8 md:px-12 lg:px-16 bg-surface">
+      <div class="max-w-[1280px] mx-auto">
+        <div class="mb-10 md:mb-12 border-l-4 border-tertiary-fixed-dim pl-6">
+          <h2 class="text-3xl md:text-4xl font-display text-on-surface uppercase tracking-tight">SIGNATURE COCKTAILS</h2>
+          <p class="text-on-surface-variant font-bold text-sm tracking-widest mt-2 uppercase">HOUSE-CRAFTED ELIXIRS</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+          <!-- Featured Large Card -->
+          <div class="md:col-span-8 group relative overflow-hidden glass-card rounded-xl">
+            <div class="flex flex-col md:flex-row h-full">
+              <div class="w-full md:w-1/2 h-64 md:h-full relative">
+                <img alt="The Neon Soul cocktail" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRESj7vpHgggTa40ERCLLoDhWQhBedTTCJiIYTGnLwuHWqPMGBJ4tPitqIBu_WDcbjV71ztUjswoJhzQjD74W7nSsbeSlf9P2kxrKBHBqp8bhyIamBe_u5Q2qfVdOS05T55TSZsMncKlXcRkroZJnMrG_wMUSV3e-U4374XZRofDey83b4dO0rcUTMHf-KhisJ6Lw1FqO6nYfrWGrAkqPsiTQHINUYzrtkH59HF_2plVr_mM28viVz6cTEBnYqu8mFXBtJDnxKkDI" />
+              </div>
+              <div class="w-full md:w-1/2 p-8 md:p-10 flex flex-col justify-center">
+                <span class="text-tertiary-fixed-dim font-headline text-xs tracking-widest mb-2">MOST POPULAR</span>
+                <h3 class="text-2xl md:text-3xl font-display text-on-surface mb-4">THE NEON SOUL</h3>
+                <p class="text-on-surface-variant mb-6 font-bold leading-relaxed">Artisanal Gin, Butterfly Pea Flower infusion, Maraschino liqueur, and fresh citrus. Shaken to a velvet finish.</p>
+                <div class="flex justify-between items-center border-t border-outline-variant pt-6">
+                  <span class="text-2xl font-headline text-tertiary-fixed-dim">$18</span>
+                  <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-125 transition-transform magnetic">add_circle</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Side Stack -->
+          <div class="md:col-span-4 flex flex-col gap-6 md:gap-8">
+            <div class="glass-card p-6 md:p-8 rounded-xl hover:bg-surface-container-highest transition-colors cursor-hover">
+              <h3 class="text-xl font-display text-on-surface mb-2">MIDNIGHT MULE</h3>
+              <p class="text-on-surface-variant text-sm font-bold mb-4">Smoked Rye, Spiced Ginger, Activated Charcoal, Lime.</p>
+              <span class="text-xl font-headline text-tertiary-fixed-dim">$16</span>
+            </div>
+            <div class="glass-card p-6 md:p-8 rounded-xl hover:bg-surface-container-highest transition-colors cursor-hover">
+              <h3 class="text-xl font-display text-on-surface mb-2">ELECTRIC MARGARITA</h3>
+              <p class="text-on-surface-variant text-sm font-bold mb-4">Hibiscus Tequila, Agave, Black Salt Rim, Neon Zest.</p>
+              <span class="text-xl font-headline text-tertiary-fixed-dim">$17</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- On Tap -->
+    <section class="py-12 md:py-16 bg-surface-container-low">
+      <div class="max-w-[1280px] mx-auto px-8 md:px-12 lg:px-16">
+        <div class="text-center mb-10 md:mb-12">
+          <h2 class="text-4xl md:text-5xl font-display text-on-surface uppercase tracking-tighter">ON TAP</h2>
+          <div class="w-24 h-1 bg-primary mx-auto mt-4"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-y border-outline-variant/30">
+          <div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-outline-variant/30 hover:bg-surface-container-highest transition-colors cursor-hover">
+            <span class="text-primary font-headline text-xs tracking-widest">01</span>
+            <h3 class="text-xl md:text-2xl font-display text-on-surface mt-4">TAVERN LAGER</h3>
+            <p class="text-on-surface-variant mt-2 mb-6 font-bold uppercase text-[10px] tracking-widest">Old School Brewing &bull; 4.8% ABV</p>
+            <p class="text-on-surface-variant font-bold italic">Crisp, clean, classic. The soul of the tavern in a frosted mug.</p>
+          </div>
+          <div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-outline-variant/30 hover:bg-surface-container-highest transition-colors bg-surface-container cursor-hover">
+            <span class="text-primary font-headline text-xs tracking-widest">02</span>
+            <h3 class="text-xl md:text-2xl font-display text-on-surface mt-4">NEON DREAMS IPA</h3>
+            <p class="text-on-surface-variant mt-2 mb-6 font-bold uppercase text-[10px] tracking-widest">Flashpoint Ales &bull; 7.2% ABV</p>
+            <p class="text-on-surface-variant font-bold italic">Hazy, tropical citrus notes with a balanced resinous finish.</p>
+          </div>
+          <div class="p-8 md:p-12 hover:bg-surface-container-highest transition-colors cursor-hover">
+            <span class="text-primary font-headline text-xs tracking-widest">03</span>
+            <h3 class="text-xl md:text-2xl font-display text-on-surface mt-4">OBSIDIAN STOUT</h3>
+            <p class="text-on-surface-variant mt-2 mb-6 font-bold uppercase text-[10px] tracking-widest">Dark Matter Labs &bull; 8.5% ABV</p>
+            <p class="text-on-surface-variant font-bold italic">Notes of roasted espresso, dark chocolate, and midnight.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottles & Cans -->
+    <section class="py-12 md:py-16 px-8 md:px-12 lg:px-16 bg-surface">
+      <div class="max-w-[1280px] mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-12">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-display text-on-surface uppercase">BOTTLES &amp; CANS</h2>
+            <p class="text-on-surface-variant font-bold text-xs tracking-widest uppercase mt-2">Curated selection from the fridge</p>
+          </div>
+          <div class="hidden md:block">
+            <span class="text-primary font-headline text-3xl md:text-4xl opacity-20">COLD STORAGE</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div class="bg-surface-container-highest p-6 md:p-8 group cursor-hover border-b-2 border-transparent hover:border-primary transition-all">
+            <h4 class="font-display text-base md:text-lg text-on-surface mb-1">LOCAL CRAFT CIDER</h4>
+            <p class="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest">Farmhouse Red &bull; 5%</p>
+            <p class="text-primary font-headline mt-4">$8</p>
+          </div>
+          <div class="bg-surface-container-highest p-6 md:p-8 group cursor-hover border-b-2 border-transparent hover:border-primary transition-all">
+            <h4 class="font-display text-base md:text-lg text-on-surface mb-1">EUROPEAN PILSNER</h4>
+            <p class="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest">Import Classic &bull; 5.1%</p>
+            <p class="text-primary font-headline mt-4">$9</p>
+          </div>
+          <div class="bg-surface-container-highest p-6 md:p-8 group cursor-hover border-b-2 border-transparent hover:border-primary transition-all">
+            <h4 class="font-display text-base md:text-lg text-on-surface mb-1">SOURS &amp; GOSE</h4>
+            <p class="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest">Rotating Seasonal &bull; Var%</p>
+            <p class="text-primary font-headline mt-4">$10</p>
+          </div>
+          <div class="bg-surface-container-highest p-6 md:p-8 group cursor-hover border-b-2 border-transparent hover:border-primary transition-all">
+            <h4 class="font-display text-base md:text-lg text-on-surface mb-1">HARD SELTZER</h4>
+            <p class="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest">Black Cherry &bull; 4.5%</p>
+            <p class="text-primary font-headline mt-4">$7</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Atmosphere CTA -->
+    <section class="h-[500px] md:h-[614px] relative flex items-center justify-center">
+      <div class="absolute inset-0">
+        <img alt="Bar atmosphere" class="w-full h-full object-cover parallax-img scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH1Kqp5ia0EDECUj-MFbI7J8yUel7d1FKQqGw0MbxH79CslQEq-ijvQrCZr1JvexfBEeVtsT2ve7e9HJganJK7S0CQk5pkMngIfmQmpxw1BiVysKoqubUIF7Gc2akdbunBu1DiJSCotMFwaXF1ha2DJat0PZdrHJaHgMd8qc1DVb0VhUDGBbhnMsNp2246D8zfjnIZeWFPOCNm7ibHrSjceFeHzrzFZobPCuhHfbX_ckQGIhnlORz40qqfcUengpuoB9XrEgK73Zw" />
+        <div class="absolute inset-0 bg-surface/80"></div>
+      </div>
+      <div class="relative z-10 text-center space-y-6 md:space-y-8 max-w-2xl px-8 md:px-12">
+        <h3 class="text-3xl md:text-5xl font-display text-on-surface uppercase tracking-tighter">THE BEST NIGHTS START HERE.</h3>
+        <p class="text-on-surface-variant font-bold leading-relaxed">Join us for Happy Hour every weekday from 4PM - 7PM. Half off all craft taps and select signature cocktails.</p>
+        <button class="btn-primary px-10 py-4 font-headline magnetic neon-box-pink">GET DIRECTIONS</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#100f0d] border-t border-white/5 pt-12 md:pt-16 pb-6 md:pb-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 px-8 md:px-12 lg:px-16 pb-12 md:pb-16 w-full">
+      <div>
+        <h3 class="text-xl font-black text-white font-headline mb-6 md:mb-8 uppercase">Old School Tavern</h3>
+        <p class="text-gray-400 font-bold mb-6 md:mb-8">123 Midnight Ave,<br/>Neon District, NY 10001</p>
+        <div class="flex space-x-3">
+          <a class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#"><span class="material-symbols-outlined text-lg md:text-xl">share_reviews</span></a>
+          <a class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#"><span class="material-symbols-outlined text-lg md:text-xl">camera</span></a>
+          <a class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-black transition-all duration-300 magnetic" href="#"><span class="material-symbols-outlined text-lg md:text-xl">music_note</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-primary font-bold mb-4 md:mb-6 uppercase tracking-widest text-sm">Navigation</h4>
+        <ul class="space-y-3 md:space-y-4">
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/the-bar.html">The Bar</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/the-kitchen.html">The Kitchen</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/the-events.html">The Events</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-primary font-bold mb-4 md:mb-6 uppercase tracking-widest text-sm">Legal</h4>
+        <ul class="space-y-3 md:space-y-4">
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Terms of Service</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Press Kit</a></li>
+          <li><a class="text-gray-400 hover:text-white transition-colors" href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-primary font-bold mb-4 md:mb-6 uppercase tracking-widest text-sm">Opening Hours</h4>
+        <div class="text-gray-400 space-y-2">
+          <div class="flex justify-between"><span>Mon - Thu:</span><span>4PM - 1AM</span></div>
+          <div class="flex justify-between"><span>Fri - Sat:</span><span>2PM - 3AM</span></div>
+          <div class="flex justify-between"><span>Sunday:</span><span>2PM - 12AM</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="px-8 md:px-12 lg:px-16 pt-6 md:pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-bold uppercase tracking-widest">
+      <p>&copy; 2026 Old School Tavern. Midnight Pulse.</p>
+      <p class="mt-3 md:mt-0">ESTABLISHED IN THE SHADOWS</p>
+    </div>
+  </footer>
+</body>
+</html>
