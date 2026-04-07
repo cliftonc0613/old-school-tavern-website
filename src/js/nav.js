@@ -37,9 +37,9 @@ export function initNav() {
     // Animate hamburger to X
     const lines = hamburger.querySelectorAll('span')
     if (isOpen) {
-      lines[0].style.transform = 'rotate(45deg) translate(5px, 5px)'
+      lines[0].style.transform = 'rotate(45deg) translate(4px, 4px)'
       lines[1].style.opacity = '0'
-      lines[2].style.transform = 'rotate(-45deg) translate(5px, -5px)'
+      lines[2].style.transform = 'rotate(-45deg) translate(4px, -4px)'
     } else {
       lines[0].style.transform = ''
       lines[1].style.opacity = '1'
