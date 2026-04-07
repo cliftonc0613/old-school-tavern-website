@@ -12,6 +12,7 @@ export default defineConfig({
         bar: resolve(__dirname, 'the-bar.html'),
         kitchen: resolve(__dirname, 'the-kitchen.html'),
         events: resolve(__dirname, 'the-events.html'),
+        gallery: resolve(__dirname, 'gallery.html'),
         contact: resolve(__dirname, 'contact.html'),
       },
     },
